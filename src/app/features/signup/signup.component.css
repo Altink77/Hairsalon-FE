@@ -1,0 +1,141 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  width: 80px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  color: #f44336;
+}
+
+.login-btn {
+  background-color: #E85A4F;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+.login-btn:hover {
+  background-color: #fff;
+  color: #f44336;
+  border: 2px solid #f44336;
+  cursor: pointer;
+}
+
+.container {
+display:flex;
+   background-image: url('src/assets/images/slikalog.jpg');
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: darken;
+      background-position: center;
+  padding: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form {
+   background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 80px; /* Increase the padding to create more space */
+    margin-right: 100px; /* Increase the margin to add more spacing around the form */
+    margin-left: 100px;
+    border-radius: 10px; /* Increase the border radius for rounded corners */
+    box-shadow: 0px 0px 10px 0px #ccc;
+    max-width:80%;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="lastname"],
+input[type="email"],
+input[type="username"],
+input[type="password"],
+select {
+  width: 350px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #007bff;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0062cc;
+}

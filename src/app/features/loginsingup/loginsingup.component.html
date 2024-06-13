@@ -1,0 +1,38 @@
+<header>
+  <div class="logo">
+    <img src="assets/images/logo.avif" alt="Our Logo">
+  </div>
+  <nav>
+    <ul>
+
+      <li><a href="#">Stylists</a></li>
+      <li><a [routerLink]="['/services']">Services</a></li>
+      <li><a [routerLink]="['/bookapointment']">Book Appointment</a></li>
+      <li><a [routerLink]="['/modelsignup']">Model Sign-up</a></li>
+      <li><a [routerLink]="['/aboutus']">About Us</a></li>
+      <li><a [routerLink]="['/']" class="login-btn">Home</a></li>
+      <li><a [routerLink]="['/signup']" class="login-btn">Signup</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container" xmlns="http://www.w3.org/1999/html">
+  <form>
+    <h1>Login</h1>
+    <div class="form-group">
+      <p>
+        <label>Username</label>
+        <input matInput id="username" type="text" name="username" class="form-control" [(ngModel)]="username" required>
+      </p>
+      <p>
+        <label>Password</label>
+        <input matInput id="password" type="password" name="password" class="form-control" [(ngModel)]="password" required>
+      </p>
+    </div>
+    <button (click)="login()" type="submit" class="btn btn-primary" >Login</button>
+    <a [routerLink]="['/signup']" >Don't have a account Sign up</a>
+
+  </form>
+
+</div>
+<app-footer></app-footer>

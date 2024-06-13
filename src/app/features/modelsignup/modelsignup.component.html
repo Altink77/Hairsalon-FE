@@ -1,0 +1,51 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<header>
+  <div class="logo">
+    <a [routerLink]="['/']">
+      <img src="assets/images/logo.avif" alt="Our Logo" [routerLink]="['/']">
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a [routerLink]="['/stylist']">Stylist</a></li>
+      <li><a [routerLink]="['/services']">Services</a></li>
+      <li><a [routerLink]="['/bookapointment']">Book Appointment</a></li>
+      <li><a [routerLink]="['/modelsignup']">Model Sign-up</a></li>
+      <li><a [routerLink]="['/aboutus']">About Us</a></li>
+      <li><a [routerLink]="['/login']" class="login-btn">Login</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+
+<div class="heder">Become A Model At Our Hairsalon</div>
+<div class="paragraph">
+  <p>Thank you for expressing interest in becoming model for our hair salon. We are excited to review your application.
+  <p>Please provide us with the following information to help us better understand your experience and qualifications:</p>
+</div>
+
+<form name="forma">
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phonenumber">Phone number:</label>
+  <input type="phonenumber" id="phonenumber" name="phonenumber" required>
+
+  <label for="age">Age:</label>
+  <input type="age" id="age" name="age" required>
+
+  <label for="message">Previous Experience:</label>
+  <textarea id="message" name="message" placeholder="Previous experience with modeling..."></textarea>
+
+  <button (click)="signupNow()">Sign Up</button>
+</form>
+</body>
+<app-footer></app-footer>
+
+
+
